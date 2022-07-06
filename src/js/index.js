@@ -2,11 +2,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-// include your styles into the webpack bundle
+//include your index.scss file into the bundle
 import "../styles/index.css";
 
-//import your own components
-import Home from "./component/home.jsx";
+import Counters from "./component/counter.jsx";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(<Counters />, document.querySelector("#app"));
+
+let number = 0;
+
+setInterval(() =>{ //Function to Modify every secs
+    number++
+    ReactDOM.render(<Counters number={number}/>, document.querySelector("#app"))
+}, 0.00001)
