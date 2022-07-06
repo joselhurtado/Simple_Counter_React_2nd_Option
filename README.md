@@ -1,4 +1,6 @@
-# Hello World with React boilerplate
+# Simple Counter Using React 2nd Solution
+
+<img src="src/img/Simple Counter Using React 2nd Solution.png">
 <p>
   <a href="https://gitpod.io#https://github.com/4GeeksAcademy/react-hello.git"><img src="https://raw.githubusercontent.com/4GeeksAcademy/react-hello/master/open-in-gitpod.svg?sanitize=true" />
   </a>

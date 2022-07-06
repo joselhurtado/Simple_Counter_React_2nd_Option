@@ -5,11 +5,11 @@ export default function Counter(props){
     const places = number.toString().split("").reverse()
     console.log(places);
 
-    return <div className="container">
-    <h1>SIMPLE COUNTER CLOCK</h1>
-    <div className="container-lg row">
-        <div className="col box bg-danger clock">
-        <h1 class="fa-regular fa-clock"></h1></div>
+    return <div className="container-sm">
+    <h1 className="title">SIMPLE COUNTER CLOCK</h1>
+    <div className="container row">
+        <div className="col box bg-danger">
+        <h1 class="clock fa-regular fa-clock fa-beat-fade"></h1></div>
         <div className="col box bg-light">
         <h2>{places.length > 5 ? places[5]: 0}</h2></div>
         <div className="col box bg-light">
@@ -23,6 +23,12 @@ export default function Counter(props){
         <div className="col box bg-light">
         <h2>{places[0]}</h2></div>
     </div>
+	<br />
+			<button
+				className="container btn btn-dark buttonCounter"
+				onClick={() => window.location.reload(false)}>
+				Click to Reload!
+			</button>
 </div>
 }
 
